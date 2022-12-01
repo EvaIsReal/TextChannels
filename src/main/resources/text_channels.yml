@@ -1,0 +1,38 @@
+# Use this file to create your own text-channels or modify existing ones. Please restart your server everytime
+# you make an update to this file to avoid unwanted errors.
+
+# DO NOT DELETE THIS TAG!
+Text-Channels:
+  # The name of your Text-Channel. Every text-channel must have a UNIQUE name otherwise it won't be recognized by the plugin.
+  ExampleChannelPublic:
+    # Every text-channel must have a UNIQUE id as well, or it WILL lead to errors.
+    id: 2
+    # The name of your channel that will be displayed in the gui menu or command line.
+    name: "Example Channel Public"
+    # You can add a specific permission that is needed to join this channel. Leave empty for none
+    perm: ""
+    # You can also add a password. Players are required to enter this password to join this channel.
+    password: ""
+    # The prefix that is displayed before a message in chat.
+    prefix: "&7[&eEx1&7]"
+    # The icon for the text-channel-browser menu.
+    icon: DIRT
+    # A short description that is also shown in the browser or command line.
+    description: "This is an example of a public Text-Channel"
+
+  ExampleChannelPassword:
+    id: 3
+    name: "Example Channel Password"
+    perm: ""
+    password: "1234"
+    prefix: "&7[&4ExP1&7]"
+    icon: BARRIER
+    description: "This is an example of a password secured Text-Channel"
+  ExampleChannelPublic2:
+    id: 4
+    name: "Second Example Channel Public"
+    perm: ""
+    password: ""
+    prefix: "&7[&eEx2&7]"
+    icon: DIRT
+    description: "This is the second example of a public Text-Channel"

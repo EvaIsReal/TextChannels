@@ -1,0 +1,7 @@
+# Use this file to configure general settings for this plugin.
+# Please use '&' for coloring
+
+plugin_prefix: "&2[TextChannels]"
+
+global_tc_prefix: "&7[&aG&7]"
+

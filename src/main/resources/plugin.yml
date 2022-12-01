@@ -1,0 +1,11 @@
+name: Textchannels
+version: '${project.version}'
+main: de.iv.textchannels.Main
+api-version: 1.19
+authors: [ Iv ]
+description: Simple Text Channels
+commands:
+  textchannels:
+    description: Everything about TextChannels
+    aliases:
+      - tc
