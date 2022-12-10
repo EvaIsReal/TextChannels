@@ -1,6 +1,9 @@
 package de.iv.textchannels;
 
+import org.apache.logging.log4j.util.Strings;
 import org.bukkit.Material;
+
+import java.util.Objects;
 
 public class TextChannel {
 
@@ -27,7 +30,7 @@ public class TextChannel {
     }
 
     public boolean hasPassword() {
-        return password.toCharArray().length != 0;
+        return !password.equals("-n");
     }
 
     public int getId() {

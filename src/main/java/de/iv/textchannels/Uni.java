@@ -13,15 +13,12 @@ public class Uni {
 
     static FileConfiguration cfg = IOManager.getConfig("settings.yml").getCfg();
 
-    public static final String PREFIX = ILib.color(Objects.requireNonNull(cfg.getString("plugin_prefix")));
+    public static final String PREFIX = ILib.color(Objects.requireNonNull(cfg.getString("plugin_prefix"))) + " ";
 
-    public static <T> boolean listHas(List<T> list, Predicate<? super T> searchPredicate) {
-        for (T object : list) {
-            if(searchPredicate.test(object)) {
-                return true;
-            }
-        }
-        return false;
+    public static boolean isEmptyOrBlank(String str) {
+        return str.equals("") | str == null;
     }
+
+
 
 }

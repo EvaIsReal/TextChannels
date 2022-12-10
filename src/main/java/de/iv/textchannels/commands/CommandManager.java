@@ -1,6 +1,7 @@
 package de.iv.textchannels.commands;
 
 import de.iv.textchannels.Main;
+import de.iv.textchannels.commands.subcommands.CreateCommand;
 import de.iv.textchannels.commands.subcommands.HelpCommand;
 import de.iv.textchannels.commands.subcommands.MenuCommand;
 import de.iv.textchannels.exception.CommandExecuteException;
@@ -20,6 +21,7 @@ public class CommandManager implements CommandExecutor, TabCompleter {
     public CommandManager(Main plugin) {
         subCommands.add(new HelpCommand());
         subCommands.add(new MenuCommand());
+        subCommands.add(new CreateCommand());
 
         plugin.getCommand("textchannels").setExecutor(this);
     }

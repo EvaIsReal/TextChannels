@@ -18,6 +18,7 @@ public class IOManager {
     public static void registerConfigs() {
         //add configs to list
         configs.add(new Config("text_channels.yml", Main.get().getDataFolder()));
+        configs.add(new Config("settings.yml", Main.get().getDataFolder()));
     }
 
     public static void init() {

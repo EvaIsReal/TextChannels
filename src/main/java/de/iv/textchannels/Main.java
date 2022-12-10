@@ -22,8 +22,8 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        ItemBuilder.setup(instance);
         IOManager.init();
+        ItemBuilder.setup(instance);
         MenuManager.setup(getServer(), instance);
         CommandManager commandManager = new CommandManager(instance);
 

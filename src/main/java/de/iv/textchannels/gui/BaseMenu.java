@@ -64,7 +64,7 @@ public class BaseMenu extends Menu {
                 .setLore(ChatPaginator.wordWrap(ILib.color("&7Browse all available Text-Channels"), 25))
                 .addToPDC("menu_item", "TC_BROWSER")
                 .build());
-        setFillerGlass();
+        setFillerGlass(new ItemBuilder(Material.GRAY_STAINED_GLASS_PANE).setName("").build());
     }
 
     @Override
