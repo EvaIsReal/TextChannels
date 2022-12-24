@@ -20,7 +20,7 @@ public class CreateCommand extends ConsoleCommand implements PermissionCommand {
         ConversationFactory factory = new ConversationFactory(Main.get())
                 .withEscapeSequence("exit")
                 .withFirstPrompt(new TextChannelCreationConversation.NamePrompt())
-                .withTimeout(20)
+                .withTimeout(30)
                 .addConversationAbandonedListener(new ConversationAboundedListener())
                 .withLocalEcho(false)
                 .withPrefix(context -> Uni.PREFIX);

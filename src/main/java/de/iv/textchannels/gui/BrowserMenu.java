@@ -97,11 +97,9 @@ public class BrowserMenu extends PaginatedMenu {
     @Override
     public void setMenuItems() {
         setBorderItems();
-
         /*for (TextChannel tc : UserManager.getTextChannels()) {
 
         }*/
-
         for (int i = 0; i < getMaxItemsPerPage(); i++) {
             index = getMaxItemsPerPage() * page + i;
             if(index >= UserManager.getTextChannels().size()) break;

@@ -55,10 +55,10 @@ public class ChangeMenu extends Menu {
                     TextChannel tc = parseTc((Player) e.getWhoClicked());
                     if (parseTc(p).getId() - 1 >= 0) {
                         TextChannel nTc = textChannels.get(parseTc(p).getId() - 1);
-                        if (nTc.getPassword().equals("")) {
+                        if (!nTc.hasPassword()) {
                             UserManager.selectTextChannel(e.getWhoClicked().getUniqueId().toString(), nTc.getId());
                         } else {
-                            while(!nTc.getPassword().equals("") | !(nTc.getPerm().equals(""))) {
+                            while(!nTc.hasPassword() | !(nTc.getPerm().equals(""))) {
                                 nTc = textChannels.get(nTc.getId()-1);
                             }
                             UserManager.selectTextChannel(p.getUniqueId().toString(), nTc.getId());
@@ -91,10 +91,10 @@ public class ChangeMenu extends Menu {
                     TextChannel tc = parseTc((Player) e.getWhoClicked());
                     try {
                         TextChannel nTc = textChannels.get(parseTc(p).getId() + 1);
-                        if (nTc.getPassword().equals("")) {
+                        if (!nTc.hasPassword()) {
                             UserManager.selectTextChannel(e.getWhoClicked().getUniqueId().toString(), nTc.getId());
                         } else {
-                            while(!nTc.getPassword().equals("") | !(nTc.getPerm().equals(""))) {
+                            while(!nTc.hasPassword() | !(nTc.getPerm().equals(""))) {
                                 nTc = textChannels.get(nTc.getId()+1);
                             }
                             UserManager.selectTextChannel(p.getUniqueId().toString(), nTc.getId());

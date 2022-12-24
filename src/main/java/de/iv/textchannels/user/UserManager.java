@@ -24,8 +24,8 @@ public class UserManager {
     private static FileConfiguration cfg = IOManager.getConfig("settings.yml").getCfg();
 
     public static void init() {
-        textChannels.add(new TextChannel(0, "Global", "", "", cfg.getString("global_tc_prefix"), Material.GRASS_BLOCK, "The default Text-Channel for everyone."));
-        textChannels.add(new TextChannel(1, "test", "sys.test", "", "&7[&cT&7]", Material.COMMAND_BLOCK, "This is for testing..."));
+        textChannels.add(new TextChannel(0, "Global", "", "-n", cfg.getString("global_tc_prefix"), Material.GRASS_BLOCK, "The default Text-Channel for everyone."));
+        textChannels.add(new TextChannel(1, "test", "sys.test", "-n", "&7[&cT&7]", Material.COMMAND_BLOCK, "This is for testing..."));
 
         //get custom TCs from separate file
         compileTextChannels();

@@ -11,8 +11,9 @@ Text-Channels:
     name: "Example Channel Public"
     # You can add a specific permission that is needed to join this channel. Leave empty for none
     perm: ""
-    # You can also add a password. Players are required to enter this password to join this channel.
-    password: ""
+    # You can also add a password. Players are required to enter this password to join this channel. If no password is needed
+    # type '-n'
+    password: "-n"
     # The prefix that is displayed before a message in chat.
     prefix: "&7[&eEx1&7]"
     # The icon for the text-channel-browser menu.
@@ -32,7 +33,7 @@ Text-Channels:
     id: 4
     name: "Second Example Channel Public"
     perm: ""
-    password: ""
+    password: "-n"
     prefix: "&7[&eEx2&7]"
     icon: DIRT
     description: "This is the second example of a public Text-Channel"
