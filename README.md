@@ -1,5 +1,4 @@
 # TextChannels
 A Text Channel Plugin for Minecraft Servers
 
-# Functionality 
-Players can set their text channel to communicate only with players who are in the same text channel.
+Allows users to create and switch through text-channels, allowing them to only communiate with players in the same text-channel.
